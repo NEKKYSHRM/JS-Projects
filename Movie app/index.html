@@ -7,27 +7,31 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Movie Buddy</h1>
-      <div class="searchbox">
-        <input type="text" id="movieInput" placeholder="Enter movie name" />
-        <button id="submit">Search</button>
-      </div>
-      <div class="hidden" id="info">
-        <div id="image" class="media"></div>
-        <h3 id="title"></h3>
-        <div class="movie-details">
-          <p id="actors"></p>
-          <p id="year"></p>
-          <p id="genre"></p>
-          <p id="country"></p>
-          <p id="director"></p>
-          <p id="plot"></p>
-          <p id="imdbRating"></p>
+    <header>
+      <div class="container">
+        <h1>Movie Buddy</h1>
+        <div class="searchbox">
+          <input type="text" id="movieInput" placeholder="Enter movie name" />
+          <button id="submit">Search</button>
         </div>
+        <div class="hidden" id="info">
+          <div id="image" class="media"></div>
+          <h3 id="title"></h3>
+          <div class="movie-details">
+            <p id="actors"></p>
+            <p id="year"></p>
+            <p id="genre"></p>
+            <p id="country"></p>
+            <p id="director"></p>
+            <p id="plot"></p>
+            <p id="imdbRating"></p>
+          </div>
+        </div>
+        <p style="color: red" id="error-message"></p>
       </div>
-      <p style="color: red;" id="error-message"></p>
-    </div>
+    </header>
+
+    <div id="movieListings"></div>
 
     <script src="script.js"></script>
   </body>
